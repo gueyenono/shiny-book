@@ -189,7 +189,7 @@ These particular properties--laziness, caching, reactivity, and lack of side eff
 
 #### Reactive graphs
 
-Reactive expressions are unique among reactive primitives, in that they are the only construct that can be both read other objects (i.e. act as a consumer), and be read from (i.e. act as a source). Observers can read/consume values, but they cannot offer a value to anyone directly. Reactive values can be read, but since they are essentially just named values, they have no notion of reading anything else. If the reactive world was limited to reactive values and observers, you could line up all the reactive values in one column and all the observers in a second column, and then draw many-to-many relationships between the two columns.
+Reactive expressions are unique among reactive primitives, in that they are the only construct that can both read other objects (i.e. act as a consumer), and be read from (i.e. act as a source). Observers can read/consume values, but they cannot offer a value to anyone directly. Reactive values can be read, but since they are essentially just named values, they have no notion of reading anything else. If the reactive world was limited to reactive values and observers, you could line up all the reactive values in one column and all the observers in a second column, and then draw many-to-many relationships between the two columns.
 
 ```{r echo=FALSE,out.width="30%"}
 knitr::include_graphics("images/05-reactivity/reactivity-without-expr.png")
